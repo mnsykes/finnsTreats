@@ -1,0 +1,147 @@
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  max-width: 1200px;
+  font-family: "Mulish", sans-serif;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.pageWrapper {
+  height: 100vh;
+  background: url(../assets/IMG-42644.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.pageWrapper::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  cursor: pointer;
+}
+
+#nav {
+  padding: 10px 10px 0 10px;
+}
+
+#nav .hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#nav .hamburger .line {
+  height: 1.5px;
+  width: 15px;
+  margin: 3px 0;
+  background-color: white;
+}
+
+#nav .social {
+  float: right;
+}
+
+#nav .social i {
+  margin-left: 15px;
+}
+
+#nav #sideNav {
+  background: #f6f6f6;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#nav #sideNav a {
+  color: #4a4a4a;
+  font-weight: bold;
+  padding: 0 10px;
+  margin: 15px 0;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#nav #sideNav a.closeBtn {
+  margin: 0;
+}
+
+#nav #sideNav a:hover {
+  color: #7c7c7c;
+}
+
+main {
+  text-align: center;
+}
+
+.bottomNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #333;
+}
+
+.bottomNav a {
+  font-size: 12px;
+  margin: 0 25px;
+}
+
+.bottomNav a:hover,
+.bottomNav .active {
+  color: pink;
+  border-bottom: 2px solid pink;
+}
+/*# sourceMappingURL=main.css.map */
